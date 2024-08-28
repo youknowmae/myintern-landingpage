@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Poppins'; 
+    // outline: none;
+    margin: 0;
+    border: none;
+    box-sizing: border-box; 
+    
+}
+
+html, body { height: 100%; }
+
+body { 
+    margin: 0; 
+    background-color: white;
+    overflow: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
