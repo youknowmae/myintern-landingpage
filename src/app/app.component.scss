@@ -131,7 +131,7 @@ html {
 }
 
 
-  .about-container {
+.about-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -158,9 +158,9 @@ html {
         padding-bottom: 10px;
         padding-left: 10px;
     }
-  }
+}
   
-  .features {
+.features {
     flex: 1;
     display: flex;
     justify-content: space-between;
@@ -194,6 +194,66 @@ html {
         margin-top: -150px;
     }
 }
+
+// Interface
+
+// Faculty
+.faculty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+      
+      h2 {
+        padding-bottom: 25px;
+      }
+    }
+
+    .card-container {
+      display: flex;
+    }
+
+    .card-content {
+      border: 2px solid #898121;
+      background-color: #898121;
+      border-radius: 25px;
+      height: 550px;
+      margin: 20px;
+
+      .card-info {
+        img {
+          width: 400px;
+          margin-top: 15px;
+        }
+
+        h3,
+        h5 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Contact Us
   
   
 
