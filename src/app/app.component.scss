@@ -7,8 +7,8 @@ html {
     padding: 20px;
     margin-top: 20px;
 }
-  
-/*HOME CSS*/ 
+
+/*HOME CSS*/
 /* Container Styling */
 .home {
     display: flex;
@@ -20,60 +20,60 @@ html {
     background-size: cover;
     background-position: center;
   }
-  
+
   /* Header Styling */
   .header {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
-  
+
     .logo img {
       width: 210px;
       margin-left: 50px;
       margin-top: -40px;
     }
-    
+
     .navigation {
       margin-top: -100px;
       margin-right: 180px;
       flex: 1;
       text-align: center;
-  
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
-      
+
       ul li {
         display: inline-block;
         margin: 0 25px;
         text-decoration: none;
-        color: #EE7214; 
+        color: #EE7214;
         font-weight: 500;
         cursor: pointer;
       }
     }
   }
-  
+
   .main-content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin-top: 50px;
-  
+
     .intro-text {
       max-width: 50%;
       margin-left: 30px;
       margin-top: 100px;
-  
+
       h1 {
         font-size: 98px;
         color: #ffffff;
       }
-      
+
       p {
         font-size: 18px;
         color: #ffffff;
@@ -82,12 +82,12 @@ html {
         margin-top: -25px;
       }
     }
-    
+
     .button {
       display: flex;
       justify-content: center;
       margin-top: 40px;
-  
+
       .btn {
         background-color: white;
         color: #EE7214;
@@ -99,13 +99,13 @@ html {
         margin-top: 20px;
         border-radius: 25px;
       }
-    
+
       .btn:hover {
         color: #898121;
       }
     }
 }
-  
+
 // ABOUT
 
 .about {
@@ -115,7 +115,7 @@ html {
     width: 100%;
     height: 100vh;
   }
-  
+
   .section {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ html {
     padding: 10px;
     margin-top: 160px;
   }
-  
+
   .about-content {
     flex: 1;
     max-width: 30%;
@@ -147,7 +147,7 @@ html {
     color: #EE7214;
     padding-left: 25px;
     margin-top: 80px;
-    
+
     p {
         font-size: 16px;
         text-align: start;
@@ -159,7 +159,7 @@ html {
         padding-left: 10px;
     }
 }
-  
+
 .features {
     flex: 1;
     display: flex;
@@ -189,7 +189,7 @@ html {
             padding-top: 20px;
         }
     }
-    
+
     .upper {
         margin-top: -150px;
     }
@@ -197,6 +197,48 @@ html {
 
 // Interface
 
+.slider {
+  height: 500px; // Increased height to accommodate larger images
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+
+  .slide-track {
+      width: calc(5000px * 6); // Adjusted width to match the new image size
+      display: flex;
+      animation: scroll 40s linear infinite;
+  }
+
+  .slide {
+      height: 550px; // Adjusted height to match the new image size
+      width: 550px; // Increased width for larger images
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      perspective: 100px;
+
+      img {
+          width: 100%; // Ensure the image takes up the full width of the slide
+          transition: transform 1s;
+      }
+
+      img:hover {
+          transform: translateZ(20px);
+      }
+  }
+
+  // Animation Keyframes
+  @keyframes scroll {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(calc(-300px * 3)); // Adjusted to match the new image size
+      }
+  }
+}
 // Faculty
 .faculty {
   display: flex;
@@ -221,7 +263,7 @@ html {
       display: flex;
       flex-direction: column;
       margin-top: 25px;
-      
+
       h2 {
         padding-bottom: 25px;
       }
@@ -254,8 +296,7 @@ html {
 }
 
 // Contact Us
-  
-  
 
-  
-  
+
+
+
