@@ -73,15 +73,17 @@ body {
 
 nav {
   padding: 1rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1200px;
+  //max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
+  background-color: #fafcff;
 }
 
 .nav__logo {
