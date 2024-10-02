@@ -265,27 +265,53 @@ header {
   margin-left: auto;
 }
 
-.faculty__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+/* Slider container */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   margin: 4rem 0;
 }
 
-.faculty__card {
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+.slide-track {
+  display: flex;
+  gap: 2rem;
+  width: calc(250px * 12); /* Double the width to accommodate both sets of slides */
+  animation: scroll 20s linear infinite;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6)); /* Moves through all 6 slides */
+  }
+}
+
+/* Ensure cards stay within the original layout */
+.faculty__card {
+  min-width: 250px; /* Keep the card size fixed */
+  border-radius: 1rem;
+  overflow: hidden;
+  //box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the card */
+.faculty__card:hover {
+  transform: scale(1.05);
+}
+
+/* Maintain card details */
 .faculty__details {
   padding: 1rem;
   display: grid;
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #2E3B24;
-  background-color: #fff;
+  color: #2e3b24;
+  background-color: #fafcff;
   cursor: pointer;
   text-align: center;
 }
