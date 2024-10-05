@@ -275,64 +275,47 @@ header {
 
 
 
-/* FACULTY SECTION */
-.faculty {
+/* PARTNER SECTION */
+.partner {
   background-color: #fafcff;
 }
 
-.faculty__container :is(.section__title, .section__subtitle, .view__all) {
+.partner__container :is(.section__title, .section__subtitle, .view__all) {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* Slider container */
-.slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+.partner__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin: 4rem 0;
 }
 
-.slide-track {
-  display: flex;
-  gap: 2rem;
-  width: calc(250px * 12); /* Width for original + duplicated slides */
-  animation: scroll-right 20s linear infinite; /* Changed animation name */
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 6)); /* Moves through all original slides */
-  }
-}
-
-/* Ensure cards stay within the original layout */
-.faculty__card {
-  min-width: 250px; /* Keep the card size fixed */
+.partner__card {
   border-radius: 1rem;
-  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for the card */
-.faculty__card:hover {
-  transform: scale(1.05);
-}
-
-/* Maintain card details */
-.faculty__details {
+.partner__details {
   padding: 1rem;
   display: grid;
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #2e3b24;
-  background-color: #fafcff;
+  color: #2E3B24;
+  background-color: #ffffff;
   cursor: pointer;
   text-align: center;
+}
+
+
+.partner__address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
