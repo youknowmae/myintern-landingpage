@@ -221,12 +221,52 @@ header {
   color: #2E3B24;
 }
 
-.header__content .action__btns {
+.header__content .views__num {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
 }
+
+.views {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.view__image {
+  position: relative;
+}
+
+.view__image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.view__image span {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.view__image span i {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: red;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.views > span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2E3B24;
+}
+
 
 
 /* INTERFACE SECTION */
