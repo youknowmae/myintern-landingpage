@@ -352,33 +352,34 @@ header {
 .partner {
   background-color: #fafcff;
   height: auto;
-  position: relative;
+  // position: relative;
 }
 
 .partner__container :is(.section__title, .section__subtitle, .view__all) {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+  // position: relative;
 }
 
 .partner__grid {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  // margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .partner__card {
   border-radius: 1rem;
-  width: 200px;
+  // width: 200px;
   overflow: hidden;
-  margin: 25px;
+  // margin: 10px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 
-  img {
-    height: 200px;
-    width: 200px;
-  }
+  // img {
+  //   height: 200px;
+  //   width: 200px;
+  // }
 }
 
 .partner__details {
@@ -578,6 +579,10 @@ header {
   .faculty__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .partner__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (width < 600px) {
@@ -591,6 +596,10 @@ header {
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .partner__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__container {
