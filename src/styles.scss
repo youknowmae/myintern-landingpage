@@ -10,10 +10,16 @@
 
 html, body { height: 100%; }
 
-body { 
+body {
     margin: 0; 
     background-color: white;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    height: .4rem;
+    // width: .4rem;
 }
 
 html {

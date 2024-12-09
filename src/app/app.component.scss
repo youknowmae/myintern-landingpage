@@ -201,6 +201,7 @@ header {
 
 .header__image {
   position: relative;
+  overflow: hidden;
   //background-color: #fff; /* Ensure white background for images */
 }
 
@@ -208,10 +209,6 @@ header {
   position: absolute;
   top: 50%;
   left: 66%;
-  // border: 0.5rem solid #fff;
-  // border-radius: 2rem;
-  // background-color: #fff; /* White background for images */
-  // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
 .header__image img:nth-child(1) {
@@ -603,6 +600,15 @@ header {
 }
 
 @media (width < 600px) {
+  .header__image {
+    min-height: 400px;
+    overflow: auto;
+  }
+
+  .header__content h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
   .image__about {
     flex-direction: column;
   }
@@ -624,7 +630,8 @@ header {
   }
 
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
 
   .about__container {
