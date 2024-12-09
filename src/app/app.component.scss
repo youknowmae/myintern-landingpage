@@ -432,7 +432,7 @@ header {
 
 .image__about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   // grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   align-items: center;
@@ -603,6 +603,10 @@ header {
 }
 
 @media (width < 600px) {
+  .image__about {
+    flex-direction: column;
+  }
+
   .interface__grid {
     grid-template-columns: repeat(2, 1fr);
   }
