@@ -367,6 +367,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
 .partner__card {
@@ -431,9 +432,11 @@ header {
 
 .image__about {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  // grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .second_col {
@@ -572,6 +575,8 @@ header {
     min-height: 500px;
   }
 
+  
+
   .interface__grid {
     gap: 1rem;
   }
@@ -586,6 +591,14 @@ header {
 
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__content > div {
+    padding: 5rem 1rem;
+    max-width: 100%;
   }
 }
 
